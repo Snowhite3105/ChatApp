@@ -24,7 +24,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
        document.getElementById("output").innerHTML += row;
       });});}
 getData();
-function logOut(){
+function logout(){
       localStorage.removeItem("user_name");
       localStorage.removeItem("room_name");
       window.location="index.html";
